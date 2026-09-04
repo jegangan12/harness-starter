@@ -1,0 +1,24 @@
+{
+  "project": "<название проекта>",
+  "updated": "2026-09-05",
+  "statuses": ["not_started", "in_progress", "blocked", "passing"],
+  "rule": "passing ставится только после успешной проверки с зафиксированным доказательством, не по самооценке агента. В in_progress - не больше одной фичи. blocked - только с причиной и следующим действием в CURRENT_STATE.md",
+  "features": [
+    {
+      "id": "F-000",
+      "title": "Harness проекта собран",
+      "behavior": "В корне лежат AGENTS.md, CURRENT_STATE.md, plans/feature_list.json; проверка harness проходит; команды старта и проверки в AGENTS.md - реальные",
+      "verify": "python3 tools/check_harness.py",
+      "status": "passing",
+      "evidence": "evidence/F-000-check_harness.txt"
+    },
+    {
+      "id": "F-001",
+      "title": "<Первая бизнес-фича проекта>",
+      "behavior": "<Что пользователь видит или получает. Наблюдаемо, проверяемо>",
+      "verify": "<Точная команда или сквозной сценарий: что запустить и что должно получиться>",
+      "status": "not_started",
+      "evidence": ""
+    }
+  ]
+}

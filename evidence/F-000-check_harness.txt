@@ -1,0 +1,2 @@
+HARNESS OK
+exit=0
